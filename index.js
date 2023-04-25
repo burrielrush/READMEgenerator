@@ -109,6 +109,9 @@ function generateMarkdown(data) {
 
     ## Usage 
     ${data.responses.usage}
+
+    ## Testing
+    ${data.responses.testing}
   
     ## Installation
     ${data.responses.installation}
