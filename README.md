@@ -7,6 +7,7 @@
   - [Dependencies](#dependencies)
   - [Technologies Used](#technologies-used)
   - [Usage](#usage)
+  - [Testing](#testing)
   - [Installation](#installation)
   - [Github](#github)
   - [Contact Information](#contact-information)
