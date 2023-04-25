@@ -45,6 +45,11 @@ const questions = [
     },
     {
     type: "input",
+    name: "testing",
+    message: "What testing can be done and how to run tests?"
+    },
+    {
+    type: "input",
     name: "contact-me",
     message: "Input contact information."
     },
@@ -113,6 +118,10 @@ function generateMarkdown(data) {
   
     ## Contact Information
     Contact me at ${data.responses.email}
+
+    ## Questions
+
+    For questions or support, please contact ${data.responses.email}. You can also visit my [GitHub profile](https://github.com/${data.responses.github}).
     `;
   }
 

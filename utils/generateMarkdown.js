@@ -113,7 +113,7 @@ ${data.contactMe}
 ${renderLicenseSection(data.license)}
 
 ## Questions
-For questions or support, please contact ${data.email}. You can also visit my [GitHub profile](https://github.com/${data.githubUsername}).
+For questions or support, please contact ${data.email}. You can also visit my GitHub profile(https://github.com/${data.github}).
 `;
 }
 
