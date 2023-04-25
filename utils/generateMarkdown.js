@@ -22,7 +22,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-console.log(license);
+
 
 
 // TODO: Create a function that returns the license link
@@ -82,18 +82,20 @@ This project is licensed under the MPL 2.0 License - see the [LICENSE](LICENSE) 
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  let licenseSection = '';
+  if (data.license) {
+    licenseSection = `${renderLicenseBadge(data.license)}\n\n${renderLicenseSection(data.license)}\n\n`;
+  }
   return `# ${data.title}
 
-${renderLicenseBadge(data.license)}
-
-## Description
+${licenseSection}## Description
 ${data.description}
 
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Tests](#tests)
+- [Contact-Me](#contact-me)
 ${renderLicenseLink(data.license) ? '- [License](#license)\n' : ''}- [Questions](#questions)
 
 ## Installation
@@ -105,8 +107,8 @@ ${data.usage}
 ## Contributing
 ${data.contributing}
 
-## Tests
-${data.tests}
+## Contact Me
+${data.contactMe}
 
 ${renderLicenseSection(data.license)}
 
